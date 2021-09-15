@@ -28,7 +28,7 @@ const Weather = (props) => {
               <input
                 type="submit"
                 name="click"
-                className="btn btn-primary mt-2"
+                className="btn btn-success mt-2"
                 value="buscar clima"
               />
             </div>
