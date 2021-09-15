@@ -1,3 +1,3 @@
-# if u wanna run this code, run "npm install"
-# Capture
+# Img
+### responsive design
 ![](./capture.png)
