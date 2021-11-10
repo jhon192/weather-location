@@ -24,7 +24,7 @@ const App = () => {
 
     await axios
       .get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${nameplace},${countryplace}&APPID=8ea87ec48e09f6c2f79ae041fc774f3b&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${nameplace},${countryplace}&APPID=8ea87ec48e09f6c2f79ae041fc774f3b&units=metric`
       )
       .then((e) => {
         setDatos(
