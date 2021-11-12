@@ -24,10 +24,16 @@ const App = () => {
     const nameplace = e.target[0].value;
     const countryplace = e.target[1].value;
 
-    await axios
-      .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${nameplace},${countryplace}&APPID=${REACT_APP_APIKEY}&units=metric`
-      )
+    await axios({
+      method: "get",
+      url:`https://api.openweathermap.org/data/2.5/weather`,
+      params: {
+        q: `${nameplace},${countryplace}`,
+        APPID: REACT_APP_APIKEY,
+        units: "metric"
+      }
+
+    })
       .then((e) => {
         setDatos(
           {
