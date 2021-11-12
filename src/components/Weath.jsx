@@ -2,8 +2,6 @@ import React from "react";
 
 const Weath = (props) => {
   const { name, country, windSpeed, tempMin, tempMax, error } = props;
-
-  console.log(props);
   return (
     <div
       className="container mt-4 d-flex justify-content-center"

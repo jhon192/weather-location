@@ -17,6 +17,8 @@ const App = () => {
     }
   );
 
+  const { REACT_APP_APIKEY } = process.env;
+
   const getDatos = async e => {
     e.preventDefault()
     const nameplace = e.target[0].value;
@@ -24,7 +26,7 @@ const App = () => {
 
     await axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${nameplace},${countryplace}&APPID=8ea87ec48e09f6c2f79ae041fc774f3b&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${nameplace},${countryplace}&APPID=${REACT_APP_APIKEY}&units=metric`
       )
       .then((e) => {
         setDatos(

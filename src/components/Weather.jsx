@@ -1,7 +1,6 @@
 import React from "react";
 
 const Weather = (props) => {
-  console.log(props.getDatos);
   return (
     <div className="container mt-2 d-flex justify-content-center">
       <div className="card mt-3" style={{width: "25rem"}}>
@@ -13,7 +12,7 @@ const Weather = (props) => {
                 type="text"
                 name="text"
                 className="form-control mt-2"
-                placeholder="Ingrese su region/provincia/ciudad"
+                placeholder="Enter your region / province / city"
               />
             </div>
             <div className="w-100 text-center">
@@ -21,7 +20,7 @@ const Weather = (props) => {
                 type="text"
                 name="text2"
                 className="form-control mt-2"
-                placeholder="Ingrese su pais (opcional)"
+                placeholder="Enter your country (optional)"
               />
             </div>
             <div className="text-center">
@@ -29,10 +28,11 @@ const Weather = (props) => {
                 type="submit"
                 name="click"
                 className="btn btn-success mt-2"
-                value="buscar clima"
+                value="search weather"
               />
             </div>
           </form>
+          <small style={{color: "green", fontSize: "12px"}}>Reminder: only receive countries in English</small>
         </div>
       </div>
     </div>
