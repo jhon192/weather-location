@@ -1,3 +1,3 @@
 # Img
-### responsive design
+### Web responsive design
 ![](./capture.png)
